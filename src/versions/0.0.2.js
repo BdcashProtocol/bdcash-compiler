@@ -5,7 +5,7 @@ async function compiler(code, request = '', local = false, address) {
         let compiled = `const BDCashCore = require('@bdcash-protocol/core'); const db = require('db'); const axios = require('axios');`
         compiled += `const bdcash = new BDCashCore; bdcash.staticnodes = true; const contract = "` + address + `";`
         if (local === true) {
-            compiled += `bdcash.mainnetIdaNodes = ['http://localhost:3001']; bdcash.testnetIdaNodes = ['http://localhost:3001'];`
+            compiled += `bdcash.mainnetNodesh = ['http://localhost:3001']; bdcash.testnetNodesh = ['http://localhost:3001'];`
         }
         if (request !== '') {
             compiled += 'const request = ' + JSON.stringify(request) + ';'
