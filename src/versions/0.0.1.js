@@ -2,7 +2,7 @@
 
 async function compiler(code, request = '', local = false) {
     return new Promise(response => {
-        let compiled = `const BDCashCore = require('@bdcash-protocol/core'); const db = require('db'); const axios = require('axios');`
+        let compiled = `const BDCashCore = require('@bdeco/core'); const db = require('db'); const axios = require('axios');`
         compiled += `const bdcash = new BDCashCore; bdcash.staticnodes = true;`
         if (local === true) {
             compiled += `bdcash.mainnetNodesh = ['http://localhost:3001']; bdcash.testnetNodesh = ['http://localhost:3001'];`

@@ -1,7 +1,7 @@
 {
-  "name": "@bdcash-protocol/compiler",
+  "name": "@bdeco/compiler",
   "version": "1.0.1",
-  "description": "BDCash Smart Contracts compiler",
+  "description": "BDCashProtocol Smart Contracts compiler",
   "private": false,
   "main": "src/index.js",
   "scripts": {
